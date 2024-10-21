@@ -30,4 +30,10 @@ export class CareerComponent implements OnInit {
       job.description.toLowerCase().includes(this.searchTerm.toLowerCase())
     );
   }
+
+  // New method to handle job details
+  viewJobDetails(job: any): void {
+    console.log('Job Details:', job);
+    // You can navigate to a detailed view, or open a modal, etc.
+  }
 }

@@ -12,6 +12,7 @@ import { CardComponent } from './card/card.component';
 import { AluDirectoryComponent } from './alu-directory/alu-directory.component';
 import { CareerComponent } from './career/career.component';
 import { StoriesComponent } from './stories/stories.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { StoriesComponent } from './stories/stories.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
