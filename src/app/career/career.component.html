@@ -1,0 +1,27 @@
+<div class="career-page">
+  <header>
+    <h1>Career Opportunities</h1>
+  </header>
+
+  <div class="search-bar">
+    <input
+      type="text"
+      [(ngModel)]="searchTerm"
+      placeholder="Search jobs..."
+      (input)="filterJobs()"
+    />
+  </div>
+
+  <div class="job-list">
+    <div *ngFor="let job of filteredJobs" class="job-item">
+      <h2>{{ job.title }}</h2>
+      <p>{{ job.description }}</p>
+      <p><strong>Location:</strong> {{ job.location }}</p>
+      <button (click)="viewJobDetails(job)">View Details</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>Contact us at: careers@example.com</p>
+  </footer>
+</div>

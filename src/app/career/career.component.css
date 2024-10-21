@@ -1,0 +1,41 @@
+.career-page {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .job-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .job-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    width: 80%;
+    border-radius: 5px;
+  }
+  
+  footer {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
